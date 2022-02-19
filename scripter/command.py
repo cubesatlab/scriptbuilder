@@ -1,12 +1,11 @@
-from Address import Address
-from Args import Args
-from CubedOSTime import CubedOSTime
+from address import Address
+from args import Args
+from cubedos_time import CubedOSTime
 
 
 class Command:
-    
 
-    def __init__(self, addr:Address, args:Args, time:CubedOSTime):
+    def __init__(self, addr: Address, args:Args, time: CubedOSTime):
         """Creates a new Command
 
         Args:
@@ -16,7 +15,7 @@ class Command:
         """
         pass
 
-    def changeArgs(self, args:Args):
+    def change_args(self, args: Args):
         """Method to change the arguments to a command
 
         Args:
@@ -24,7 +23,7 @@ class Command:
         """
         pass
 
-    def changeTime(self, time:CubedOSTime):
+    def change_time(self, time: CubedOSTime):
         """Changes the time that the command will be run
 
         Args:
@@ -32,7 +31,7 @@ class Command:
         """
         pass
     
-    def changeAddress(self, address:Address):
+    def change_address(self, address: Address):
         """Changes the address that the command will be sent to
 
         Args:
@@ -40,7 +39,7 @@ class Command:
         """
         pass
 
-    def getArgs(self)->Args:
+    def get_args(self) -> Args:
         """Returns the arguments to be used while running the command
 
         Returns:
@@ -48,7 +47,7 @@ class Command:
         """
         pass
 
-    def getAddress(self)->Address:
+    def get_address(self) -> Address:
         """Returns the address that the command will be sent to
 
         Returns:
@@ -56,7 +55,7 @@ class Command:
         """
         pass
 
-    def getTime(self)->CubedOSTime:
+    def get_time(self) -> CubedOSTime:
         """returns the time that the command will be run at
 
         Returns:
@@ -64,19 +63,19 @@ class Command:
         """
         pass
 
-    def __str__()->str:
-        """generates a human readable string representation of the command
+    def __str__(self) -> str:
+        """generates a human-readable string representation of the command
 
         Returns:
-            str: The human readable string
+            str: The human-readable string
         """
         pass
 
-    def __hex__()->str:
-        """returns a machine readable string representation of the command
+    def __hex__(self) -> str:
+        """returns a machine-readable string representation of the command
 
         Returns:
-            str: The machine readable string
+            str: The machine-readable string
         """
         pass
 
