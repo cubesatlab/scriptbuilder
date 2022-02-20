@@ -15,6 +15,13 @@ To set up a new development system do the following:
   builds the new virtual environment in the indicated folder (which happens to have the same
   name). Be sure to use a Python3 interpreter. Python2 is not supported by ScriptBuilder.
   
++ Be sure to activate the virtual environment before you do any of the operations described
+  below. From the root of the project folder do something like:
+  
+      $ source venv/bin/activate
+      
+  This causes all further Python manipulations to use the virtual environment created above.
+  
 + Next, populate the virtual environment with the required packages using pip as follows:
 
       $ python -m pip install -r requirements.txt.
